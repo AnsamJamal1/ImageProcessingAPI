@@ -7,14 +7,15 @@
     "start": "node dist/index.js",
     "dev": "ts-node-dev --respawn --transpile-only src/index.ts",
     "build": "tsc",
-    "lint": "eslint . --ext .ts",
-    "format": "prettier --write .",
+    "lint": "eslint src --ext .ts",
+    "format": "prettier --write src",
     "test": "jasmine-ts \"src/tests/**/*.ts\""
   },
   "dependencies": {
     "express": "^4.18.2",
     "sharp": "^0.32.6",
-    "supertest": "^7.1.4"
+    "supertest": "^7.1.4",
+    "winston": "^3.17.0"
   },
   "devDependencies": {
     "@eslint/js": "^9.9.0",
@@ -22,10 +23,12 @@
     "@types/jasmine": "^5.1.9",
     "@types/node": "^20.11.19",
     "@types/supertest": "^6.0.3",
+    "@types/winston": "^2.4.4",
     "eslint": "^9.9.0",
     "globals": "^15.8.0",
     "jasmine": "^3.9.0",
     "jasmine-ts": "^0.4.0",
+    "jiti": "^2.5.1",
     "prettier": "^3.2.5",
     "ts-node-dev": "^2.0.0",
     "typescript": "^5.6.3",
